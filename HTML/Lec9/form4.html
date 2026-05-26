@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Novel Service Login</h2>
+
+    <form>
+
+        <label for="name">Username:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password id="password">
+        <br>
+        <br>
+
+        <label for="city">City of Employment:</label>
+        <input type="text" name="city" id="city">
+        <br>
+        <br>
+
+        <label for="server">Web Server:</label>
+        <select name="server" id="server">
+
+            <!--  <option value="" selected> --Choose a Server--</option> -->
+              <!-- selected lagane se woh option default me pehle se selected dikhta hai. -->
+            <option value="" selected> ---Choose a Server-- </option>
+            <option value="server">Google</option>
+            <option value="apache">Apache</option>
+            <option value="nginx">Nginx</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="role">Please Specify your Role:</label>
+ 
+        <br><br>
+        <label for="role">Admin</label>
+        <input type="radio" name="radio1" id="role">
+        <br>
+
+        <label for="role">Engineer</label>
+        <input type="radio" name="radio1" id="role">
+        <br>
+
+        <label for="role">Manager</label>
+        <input type="radio" name="radio1" id="role">
+        <br>
+
+        <label for="role">Guest</label>
+        <input type="radio" name="radio1" id="role">
+        <br>
+        <br>
+
+        <label for="sign-on">Single Sign-on to the Following</label>
+
+        <br><br>
+
+        <label for="sign-on">Mail</label>
+        <input type="checkbox" name="sign-on" id="sign-on">
+        <br>
+
+        <label for="sign-on">Payroll</label>
+        <input type="checkbox" name="sign-on" id="sign-on">
+        <br>
+        
+        <label for="sign-on">Self-Service</label>
+        <input type="checkbox" name="sign-on" id="sign-on">
+        <br>
+
+        <button>Login</button>
+        <button>Reset</button>
+        
+    </form>
+</body>
+</html>

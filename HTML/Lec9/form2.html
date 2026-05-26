@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Job Application</h2>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+
+        <label for="emailID">Email:</label>
+        <input type="email" name="emailID" id="emailID">
+        <br>
+        <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <br>
+
+        <label for="resume1">Resume:</label>
+        <!-- // use **file for chhose file type of thing -->
+        <input type="file" name="resume1" id="resume1"> // use **file
+        <br>
+        <br>
+
+        <label for="exper">Experience (years):</label>
+        <input type="text" name="exper" id="exper">
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Skills:</legend>
+
+            <label for="cb1">HTML</label>
+            <input type="checkbox" name="cb1" id="cb1">
+            <br>
+            <br>
+
+            <label for="cb2">CSS</label>
+            <input type="checkbox" name="cb2" id="cb2">
+            <br>
+            <br>
+
+            <label for="cb3">JavaScript</label>
+            <input type="checkbox" name="cb3" id="cb3">
+            <br>
+            <br>
+        </fieldset>
+
+        <br>
+        <br>
+
+        <label for="he">Higher Education:</label>
+        <select name="he" id="he">
+            <option value="HS">High School</option>
+            <option value="JS">Junior School</option>
+            <option value="PS">Primary School</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="radio1">Avalibility:</label>
+        <input type="radio" name="time" id="radio1">
+        <br>
+        <br>
+
+        <label for="radio2">Full-Time:</label>
+        <input type="radio" name="time" id="radio2">
+        <br>
+        <br>
+
+        <label for="radio3">Part-Time:</label>
+        <input type="radio" name="time" id="radio3">
+        <br>
+        <br>
+
+        <label for="comments">Additional Comments:</label>
+        <br>
+        <textarea name="comment" id="comments"></textarea>
+
+        <!-- // use submit for small sub it box beside textarea -->
+        <input type="submit" value="Submit Application"> 
+
+    </form>
+</body>
+</html>

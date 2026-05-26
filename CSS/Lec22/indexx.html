@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: #9a3636;
+            height: 650px;
+            border: 2px solid black;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: #43d18f;
+            height: 330px;
+            width: 330px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 2px;
+
+            box-shadow: 10px 15px bisque;
+            /* blur radius */
+            box-shadow: 10px 15px 5px bisque;
+            /* spread radius */
+            box-shadow: 10px 15px 5px 40px bisque;
+            /* inner shadow */
+            box-shadow: inset 10px 15px 5px bisque;
+            /* 2 shadows */
+            box-shadow: 10px 15px 5px bisque, 15px 8px 5px rgb(32, 145, 231);
+
+        }
+
+        #head{
+            text-shadow: 2px 3px 2px yellow, 3px 3px 2px rgb(20, 123, 207), 4px 3px 2px rgb(232, 46, 232);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <img src="logo.png">
+            <h2 id="head">Welcome to Codehelp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel id quam praesentium repellendus odio sapiente laudantium tempore hic eos, dolorum, omnis eligendi expedita.</p>
+        </div>
+    </div>
+</body>
+</html>

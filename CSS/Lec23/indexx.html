@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 1300px;
+            height: 100vh;
+            background-color: rgb(246, 157, 40);
+            border: 4px solid black;
+        }
+
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+
+            position: relative;
+
+             /* animation */
+            /* position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite ;
+            /* animation-delay: 2s; */
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-fill-mode: forwards; */ 
+
+            animation: 5s linear 1s infinite alternate rightMovement;
+        }
+
+        #box2{
+            background-color: rgb(107, 107, 235);
+            border: 2px solid rgb(105, 4, 4);
+
+            position: relative;
+
+            animation: 5s linear 1s infinite alternate leftMovement;
+        }
+
+        #circle{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(211, 37, 165);
+            border-radius: 50px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+
+            top: 140px;
+            left: 670px;
+            position: relative;
+
+            animation: 5s ease-in-out 1s infinite alternate none running circleMovement;
+        }
+
+        @keyframes rightMovement{
+
+            from{
+                top: 0;
+                left: 0;
+            }
+
+            /* container width = 1300px
+               box width = 350px
+               1300 - 350 = 950px */
+            to{
+                top: 0;
+                left: 950px;
+            }
+        }
+
+        @keyframes leftMovement{
+            from{
+             top: 500px;
+             left: 950px;
+            }
+
+            to{
+             top: 500px;
+             left: 0px;
+           }
+        }
+
+         @keyframes circleMovement{
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+
+            60%{
+                top: 70%;
+                left: 10%;
+            }
+
+            100%{
+                top: 65%;
+                left: 50%;
+            }
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+
+    <div class="box" id="box1">A</div>
+    <div class="box" id="box2">B</div>
+    <div class="circle" id="circle"></div>
+
+    </div>
+
+</body>
+</html>
