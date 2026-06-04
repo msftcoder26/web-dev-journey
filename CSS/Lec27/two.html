@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Card</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            min-height: 800px;
+            background: #7f7bc9;
+            background: linear-gradient(90deg, rgb(100, 96, 172) 0%, rgb(37, 37, 170) 74%, rgb(53, 196, 224) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            width: 800px;
+            height: 400px;
+            background-color: white;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #leftbox{
+            width: 50%;
+            height: 100%;
+            position: relative;
+            
+        }
+
+        #leftbox img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #textbox{
+            position: absolute;
+            top: 100px;
+            left: 40px;
+            color: white;
+            width: 80%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #stats{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .stat{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .stat h3{
+            font-size: 1.3rem;
+        }
+
+        .stat p{
+            font-size: 1rem;
+        }
+
+        #rightbox{
+            width: 50%;
+            height: 100%;
+        }
+
+        #rightbox img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="card">
+
+            <div id="leftbox">
+                <img src="color.jpg">
+
+                <div id="textbox">  
+                    <h2>Get insights that help your business grow</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquid excepturi harum delectus quas debitis.</p>
+
+                    
+                    <div id="stats">
+
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Comments</p>
+                        </div>
+
+                        <div class="stat">
+                            <h3>214</h3>
+                            <p>Paid Users</p>
+                        </div>
+
+                        <div class="stat">
+                            <h3>12M+</h3>
+                            <p>Views</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="rightbox">
+                <img src="tech.jpg">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
